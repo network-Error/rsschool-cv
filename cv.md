@@ -19,7 +19,7 @@ function typeOfSum(a, b) {
 }
 ```
 ## Experience
-[cv](https://network-error.github.io/rsschool-cv/cv)
+**[cv](https://network-error.github.io/rsschool-cv/cv)**
 ## Education
 * **Belarusian State University of Physical Culture**
 * **HTML Academy**
