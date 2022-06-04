@@ -17,6 +17,10 @@ body {
     margin: 0 auto;
 }
 
+ul {
+    margin: 0;
+}
+
 li {
     list-style: none;
 }
@@ -36,6 +40,7 @@ h2 {
 
 /* CSS styles */
 .header {
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -99,8 +104,51 @@ h2 {
 
 .left-area {
     width: 50%;
+    background-color: black;
+    color: white;
+}
+
+.experience,
+.code-example,
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 50px;
+}
+
+.experience__header,
+.code-example__header,
+.education__header {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+
+.experience__list,
+.education__list,
+pre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid red;
+    padding-top: 20px;
+}
+
+.experience__item,
+.education__item {
+    list-style-type: disc;
+}
+
+.experience__link,
+.education__link,
+.education__item_mod {
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 20px;
 }
 
 .right-area {
     width: 50%;
+    background-color: #555555;
 }
