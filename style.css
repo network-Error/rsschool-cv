@@ -64,6 +64,10 @@ h2 {
     color: #ffffff;
 }
 
+main {
+    margin-bottom: 50px;
+}
+
 .info {
     width: 100%;
     height: 500px;
@@ -99,7 +103,7 @@ h2 {
 .info__speciality {
     font-weight: 500;
     letter-spacing: 0.3em;
-    border-top: 2px solid red;
+    border-top: 2px solid burlywood;
     width: 80%;
     padding-top: 10px;
 }
@@ -150,7 +154,7 @@ pre,
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-top: 2px solid red;
+    border-top: 2px solid burlywood;
     padding-top: 20px;
 }
 
@@ -218,4 +222,77 @@ pre {
 
 .git:hover {
     fill: lightgray;
+}
+
+@media (max-width: 1279px) {
+    .container {
+        width: 1200px;
+    }
+
+    .nav__list {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+
+    .info__photo,
+    .info__my-name {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .rs-school {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav__list {
+        gap: 10px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .info__name {
+        font-size: 30px;
+    }
+
+    .info__speciality {
+        font-size: 25px;
+    }
+
+    .experience__header,
+    .code-example__header,
+    .education__header,
+    .about-me__header,
+    .skills__header,
+    .languages__header,
+    .code-example__header {
+        font-size: 20px;
+    }
+
+    .nav__link,
+    .experience__link,
+    .education__link,
+    .education__item_mod,
+    .about-me__text,
+    .skills__item,
+    .languages__item,
+    .contacts__item,
+    .contacts__link,
+    .footer__item {
+        font-size: 16px;
+    }
 }
