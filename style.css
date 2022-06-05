@@ -111,7 +111,7 @@ main {
     padding-top: 10px;
 }
 
-.article {
+.wrapper {
     width: 100%;
     display: flex;
 }
