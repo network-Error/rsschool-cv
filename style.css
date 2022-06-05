@@ -1,0 +1,300 @@
+@import "./normalize.css";
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Questrial', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial' ,sans-serif;
+    background-color: #555555;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+/* CSS styles */
+.header {
+    background-color: grey;
+    padding: 30px 0 40px;
+    margin-bottom: 50px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav__link {
+    color: #ffffff;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+.info {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.info__photo {
+    width: 640px;
+    background-color: grey;
+    height: 100%;
+    background-image: url('./assets/img/photo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info__my-name {
+    width: 640px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+
+.info__name {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    width: 70%;
+    letter-spacing: 0.3em;
+    margin-top: 50px;
+}
+
+.info__speciality {
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    border-top: 2px solid burlywood;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.left-area {
+    width: 50%;
+    background-color: black;
+    color: white;
+}
+
+.experience,
+.code-example,
+.education,
+.about-me,
+.skills,
+.languages,
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0 15px;
+    margin-bottom: 50px;
+}
+
+.experience__header,
+.code-example__header,
+.education__header,
+.about-me__header,
+.skills__header,
+.languages__header,
+.contacts__header {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+
+.experience__list,
+.education__list,
+pre,
+.about-me__text,
+.skills__list,
+.languages__list,
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 2px solid burlywood;
+    padding-top: 20px;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+.experience__item,
+.education__item,
+.skills__item,
+.languages__item {
+    list-style-type: disc;
+}
+
+.nav__link,
+.experience__link,
+.education__link,
+.education__item_mod,
+.about-me__text,
+.skills__item,
+.languages__item,
+.contacts__item,
+.contacts__link,
+.footer__item {
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+}
+
+.right-area {
+    width: 50%;
+    background-color: #555555;
+    color: white;
+}
+
+.contacts__item {
+    color: lightgrey;
+}
+
+.experience__link:hover,
+.education__link:hover,
+.contacts__link:hover {
+    color: grey;
+}
+
+.footer {
+    background-color: grey;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.rs-school {
+    width: 200px;
+}
+
+.git {
+    transition: .3s linear;
+}
+
+.git:hover {
+    fill: lightgray;
+}
+
+@media (max-width: 1279px) {
+    .container {
+        width: 1200px;
+    }
+
+    .nav__list {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 16px;
+    }
+
+    .info__photo,
+    .info__my-name {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .rs-school {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav__list {
+        gap: 10px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .info__name {
+        font-size: 30px;
+    }
+
+    .info__speciality {
+        font-size: 25px;
+    }
+
+    .experience__header,
+    .code-example__header,
+    .education__header,
+    .about-me__header,
+    .skills__header,
+    .languages__header,
+    .code-example__header {
+        font-size: 20px;
+    }
+
+    .nav__link,
+    .experience__link,
+    .education__link,
+    .education__item_mod,
+    .about-me__text,
+    .skills__item,
+    .languages__item,
+    .contacts__item,
+    .contacts__link,
+    .footer__item {
+        font-size: 16px;
+    }
