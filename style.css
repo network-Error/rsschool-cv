@@ -27,6 +27,11 @@ li {
 
 a {
     text-decoration: none;
+    transition: .3s linear;
+}
+
+a:hover {
+    color: grey;
 }
 
 p {
@@ -92,7 +97,7 @@ h2 {
 .info__speciality {
     font-weight: 500;
     letter-spacing: 0.3em;
-    border-top: 1px solid red;
+    border-top: 2px solid red;
     width: 80%;
     padding-top: 10px;
 }
@@ -110,7 +115,11 @@ h2 {
 
 .experience,
 .code-example,
-.education {
+.education,
+.about-me,
+.skills,
+.languages,
+.contacts {
     display: flex;
     flex-direction: column;
     padding: 15px 15px 0 15px;
@@ -119,7 +128,11 @@ h2 {
 
 .experience__header,
 .code-example__header,
-.education__header {
+.education__header,
+.about-me__header,
+.skills__header,
+.languages__header,
+.contacts__header {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 30px;
     letter-spacing: 0.1em;
@@ -127,22 +140,33 @@ h2 {
 
 .experience__list,
 .education__list,
-pre {
+pre,
+.about-me__text,
+.skills__list,
+.languages__list,
+.contacts__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border-top: 1px solid red;
+    border-top: 2px solid red;
     padding-top: 20px;
 }
 
 .experience__item,
-.education__item {
+.education__item,
+.skills__item,
+.languages__item {
     list-style-type: disc;
 }
 
 .experience__link,
 .education__link,
-.education__item_mod {
+.education__item_mod,
+.about-me__text,
+.skills__item,
+.languages__item,
+.contacts__item,
+.contacts__link {
     color: white;
     letter-spacing: 0.1em;
     font-size: 20px;
@@ -151,4 +175,9 @@ pre {
 .right-area {
     width: 50%;
     background-color: #555555;
+    color: white;
+}
+
+.contacts__item {
+    color: lightgrey;
 }
